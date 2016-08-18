@@ -1,0 +1,16 @@
+/*
+* @Author: dutrasr
+* @Date:   2016-07-30 17:10:06
+* @Last Modified by:   dutrasr
+* @Last Modified time: 2016-08-10 00:30:23
+*/
+
+body {
+	background-color: #333;
+	color: white;
+	font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+}
+
+.top-container {
+	margin-bottom: 25px;
+}

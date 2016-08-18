@@ -1,0 +1,168 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../../favicon.ico">
+
+		<title>Rafael Dutra | Computer Engineer</title>
+
+		<!-- Fonts Awesome -->
+		<script src="https://use.fontawesome.com/5109c6afa4.js"></script>
+		<!-- Bootstrap core CSS -->
+		<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+		<!-- Custom styles for this template 
+		<link href="{% static 'css/navbar-static-top.css' %}" rel="stylesheet">
+		-->
+		<link href="{% static 'css/custom.css' %}" rel="stylesheet">
+		<!-- Devicon -->
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+		
+
+	</head>
+	<body>
+		
+
+		<div class="headerSection">
+			<div class="container-fluid">
+				<img src="{% static 'img/profile.jpg' %}" class="img-responsive center-block img-circle"/>
+				<h1> Hello..!</h1>
+				<p>I'm Rafael Dutra, Computer Engineer</p>
+
+			</div>
+		</div>
+		-->
+
+		<div class="aboutMe">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1>About Me</h1>
+					<i class="fa fa-user fa-2x" aria-hidden="true"></i>
+					<p>Recently graduated in Computer Engineering by Federal University of Pelotas, I'm searching for new challenges and opportunities to grow as a person and professional. Lorem ipsum dolor sit amet consectetur, Nam libero tempore, cum soluta nobis. Lorem Ipsum, you need to be sure there Nam libero tempore, cum soluta nobis.</p>
+				</div>
+			</div>
+
+			<div class="row">
+			
+				<ul>
+					<li>
+						<a class="fb" href="https://www.facebook.com/rafael.dutra.94009">
+							<span class="fa-stack fa-lg fa-3x">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+							</span>
+						</a>
+						
+					</li>
+					<li>
+						<a class="in" href="https://www.linkedin.com/in/rafael-dutra-1bb140b7">
+							<span class="fa-stack fa-lg fa-3x">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a class="git" ="https://github.com/dutrasr">
+							<span class="fa-stack fa-lg fa-3x">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa fa-github-alt fa-stack-1x fa-inverse"></i>
+							</span>
+						</a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+
+
+		<div class="skills">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12">
+						<h1>Skills</h1>
+						<i class="fa fa-cogs fa-2x" aria-hidden="true"></i>
+					</div>
+				</div>
+				<ul>
+					<li class="python">
+						<i class="devicon-python-plain-wordmark"></i
+					</li>
+
+					<li class="django">
+						<i class="devicon-django-plain-wordmark"></i
+					</li>
+
+					<li>
+						<i class="devicon-html5-plain-wordmark"></i>
+					</li>
+
+					<li>
+						<i class="devicon-css3-plain-wordmark"></i>
+					</li>
+
+					<li>
+						<i class="devicon-mongodb-plain-wordmark"></i>
+					</li>
+
+					<li>
+						<i class="devicon-bootstrap-plain-wordmark"></i>
+					</li>
+				</ul>
+			</div>
+		</div>
+<!--
+		<div class="education">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12">
+						<h1>Education</h1>
+						<i class="fa fa-book fa-2x" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="graduation" style="background: #5EBFC6; padding: 15px 0;">
+					<h3>Computer Engineer Degree</h3>
+					<h4>Federal University of Pelotas</h4>
+				</div>
+			</div>
+		</div>
+-->
+		<div class="contact">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1>Contact</h1>
+					<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+				</div>
+			</div>
+
+			<div class="row" style="margin-left: 200px;margin-right: 200px; border-bottom-style: solid; border-color: white;text-align: left">
+			<p>Need to talk with me?</p>
+    		<address>
+					Pelotas, RS, Brazil
+					<br>
+					<br>
+					(0xx 55) 53 8158-7556
+					<br>
+					<br>
+					<a href="mailto:#">dutrasr@gmail.com</a>
+				</address>
+    		</div>
+
+    		
+
+
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+		<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	</body>
+</html>

@@ -1,0 +1,110 @@
+/*
+* @Author: dutrasr
+* @Date:   2016-07-30 17:10:06
+* @Last Modified by:   dutrasr
+* @Last Modified time: 2016-08-18 14:49:59
+*/
+
+
+
+
+/*-------------Header--------------*/
+.headerSection {
+	background: url(../img/banner.jpg);
+	font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+	text-align: center;
+}
+.headerSection img {
+	margin-top: 7em;
+}
+
+.headerSection p {
+	margin-bottom: 2em;
+}
+/*---------------------------------*/
+
+
+
+/*-------------AboutMe--------------*/
+.aboutMe {
+	margin-top: 1.5em;
+	margin-right: 15px;
+	margin-left: 15px;
+	text-align: center;
+	font-family: inherit;
+}
+
+.aboutMe p {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;color: #888b90; margin-top: 1em;
+}
+
+.aboutMe ul {
+	list-style: none;
+	text-align: center;
+	padding-left: 0;
+	margin-top: 1.5em;
+}
+
+.aboutMe ul li {
+
+	display: inline-block;
+	margin-left: 8px;
+	margin-right: 8px;
+	
+}
+
+.aboutMe a {
+	color: #5EBFC6;
+}
+
+a.fb:hover {
+	color: #3b5998;
+}
+
+a.in:hover {
+	color: #007bb6;
+}
+
+a.git:hover {
+	color: black;
+}
+/*----------------------------------*/
+
+
+
+/*-----------------Skills-----------------*/
+
+.skills {
+	background: #deecdf;
+	margin-top: 1.5em;
+	text-align: center;
+	font-family: inherit;
+
+}
+
+.skills ul {
+	list-style: none;
+	text-align: center;
+	padding-left: 0;
+	margin-top: 1.5em;
+}
+
+.skills ul li {
+	font-size: 100px;
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+/*----------------------------------------*/
+
+/*-----------------Education-----------------*/
+.contact {
+	margin-top: 1.5em;
+	text-align: center;
+	font-family: inherit;
+}
+/*-------------------------------------------*/
+
+
+
