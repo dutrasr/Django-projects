@@ -2,15 +2,155 @@
 * @Author: dutrasr
 * @Date:   2016-07-30 17:10:06
 * @Last Modified by:   dutrasr
-* @Last Modified time: 2016-08-10 00:30:23
+* @Last Modified time: 2016-08-19 02:10:10
+*/
+
+/*
+**Header
 */
 
 body {
-	background-color: #333;
-	color: white;
+	font-size: 16px;
+	color: #333;
 	font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+	
+}
+h1 {
+	font-weight: 100;
+	margin-bottom: 5px;
 }
 
-.top-container {
-	margin-bottom: 25px;
+header {
+	background-image: url(../img/banner.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	align-items: center;
+	text-align: center;
+	padding: 125px 20px 35px 20px;
+}
+
+header .profile-pic {
+	border-radius: 50%;
+	margin-bottom: 2em;
+}
+
+/*
+** AboutMe
+*/
+.aboutMe {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 10px 20px 10px 20px;
+	font-family: inherit;
+}
+
+.aboutMe p {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;color: #888b90; margin-top: 1em;
+	max-width: 1000px;
+	margin-bottom: 20px;
+}
+
+.education {
+	border-top-style: solid;
+	border-color: #f1f1f1;
+}
+
+.graduation {
+	border-top-style: solid;
+	border-color: #f1f1f1;
+	margin-top: 1em;
+	
+}
+
+/*
+** Skills
+*/
+.skills {
+	background: #f1f1f1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 10px 20px 10px 20px;
+	font-family: inherit;
+}
+
+.skills ul {
+	list-style: none;
+	text-align: center;
+	align-items: center;
+	padding-left: 0;
+	margin-top: 1.5em;
+}
+
+.skills ul li {
+	font-size: 100px;
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+
+/*
+**Contact
+*/
+.contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 10px 20px 10px 20px;
+	font-family: inherit;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin-top: 1em;
+}
+
+.contact #question {
+	margin-top: 1.5em;
+}
+
+.contact ul {
+	list-style: none;
+	text-align: center;
+	align-items: center;
+	float: left;
+	padding: 0;
+
+}
+
+.contact ul li {
+	display: inline-block;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.contact a {
+	color: #5ebfc6;
+}
+
+.contact a.fb:hover {
+	color: #3b5998;
+}
+
+.contact a.in:hover {
+	color: #007bb6;
+}
+.contact a.git:hover {
+	color: #333;
+}
+
+/*
+**Footer
+*/
+
+footer {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 2px;
+	color: #f1f1f1;
+	background-color: #333;
+	font-size: 10px;
 }
