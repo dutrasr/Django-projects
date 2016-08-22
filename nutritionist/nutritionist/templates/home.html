@@ -1,0 +1,109 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../../favicon.ico">
+
+		<title>Jaqueline Dutra | Nutricionista</title>
+
+		<!-- Materialize -->
+			<!-- Compiled and minified CSS -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+			<!-- Icons -->
+			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+		<!-- Fonts Awesome -->
+		<script src="https://use.fontawesome.com/5109c6afa4.js"></script>
+		<!-- fontsGoogle -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Sans" rel="stylesheet">
+		
+		<link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+	</head>
+	<body>
+				
+		
+	
+		<header>
+			<div class="navbar-fixed">
+			<!-- Dropdown Structure-->
+			<ul id="dropdown1" class="dropdown-content">
+				<li><a href="#!">Inicio</a></li>
+				<li><a href="#!">Perfil</a></li>
+				<li><a href="#!">Programas Nutricionais</a></li>
+				<li><a href="#!">Contato</a></li>
+			</ul>
+			<nav class="#card green darken-3" style="opacity:0.4;">
+				<div class="nav-wrapper">
+					<a href="#!" class="brand-logo"><img src="{% static 'img/logo.png' %}" class="logo" alt="Jacqueline Dutra logo"></a>
+					<ul class="right">
+						<li>
+						<a class="dropdown-button right-align" href="#!" data-activates="dropdown1"><i class="material-icons right">reorder</i></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		</header>
+
+		<div id="info">
+			<div class="profile-picture">
+				<i class="fa fa-user fa-5x" aria-hidden="true"></i>
+			</div>
+			<div class="profile-info">
+				<h3>Welcome.</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit vero. </p>
+			</div>
+		</div>
+
+		<div id="qualification">
+			<h3>Qualifications</h3>
+			<ul>
+				<li class="graduation">
+					<h4>Bachelor Degree in Nutrition</h4>
+					<h5>Federal University of Pelotas</h5>
+					<h6>xxxx-xxxx</h6>
+				</li>
+				<li class="master">
+					<h4>Master Degree in Epidemiology</h4>
+					<h5>Federal University of Pelotas</h5>
+					<h6>xxxx-xxxx</h6>
+				</li>
+			</ul>
+		</div>
+
+		<div id="nutrition-programs">
+			<div class="eating-reeducation">
+				<h5>Reeducação alimentar</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit vero.</p>
+			</div>
+			<div class="weight-reduction">
+				<h5>Redução de Peso</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit vero.</p>
+			</div>
+			<div class="consultory">
+				<h5>Consultoria</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit vero.</p>
+			</div>
+		</div>
+
+		<div id="contact">
+			
+		</div>
+		<footer>
+			<h6>Desenvolvido por <a href="http://www.dutrasr.com.br">Rafael Dutra</a>.</h6>
+		</footer>
+
+		<!-- Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+		<!-- Custom js for materialize ui functions-->
+		<script language="javaScript" type="text/javascript" src="{% static 'js/dropdownMenu.js' %}"></script>
+	</body>
+</html>

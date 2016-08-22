@@ -1,0 +1,108 @@
+/*
+* @Author: dutrasr
+* @Date:   2016-08-19 03:01:10
+* @Last Modified by:   dutrasr
+* @Last Modified time: 2016-08-22 03:20:11
+*/
+
+/*
+** Body
+*/
+
+body {
+	min-height: 1000px;
+	font-size: 16px;
+	font-weight: 100;
+	margin: 0;
+	color: #333;
+}
+h1, h2, h3 {
+	font-family: 'Montserrat', sans-serif;
+}
+p {
+	font-family: 'PT Sans', sans-serif;
+}
+
+header .logo {
+	height: 50px;
+	
+}
+
+/*
+** Header
+*/
+
+header {
+	background-image: url("../img/banner3.jpg");
+	height: 100vh;
+	background-size: cover;
+	text-align: center;
+	align-items: center;
+}
+
+
+/*
+** Info
+*/
+
+#info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: #f1f1f1;
+	padding: 20px 30px 20px 30px;
+}
+
+#info p {
+	max-width: 1000px;
+}
+
+/*
+** Qualification
+*/
+
+#qualification {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 10px 30px 10px 30px;
+}
+
+
+#qualification .graduation {
+	border-top-style: solid;
+	border-color: #f1f1f1;
+}
+
+
+#qualification .master {
+	border-top-style: solid;
+	border-color: #f1f1f1;
+}
+
+/*
+** Nutrition Programs
+*/
+
+#nutrition-programs {
+	background-color: #f1f1f1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 10px 30px 10px 30px;
+}
+
+/*
+** Footer
+*/
+
+footer {
+	text-align: center;
+	color: #f1f1f1;
+	background-color: #333;
+	padding: 1px;
+
+}
