@@ -2,7 +2,7 @@
 * @Author: dutrasr
 * @Date:   2016-07-30 17:10:06
 * @Last Modified by:   dutrasr
-* @Last Modified time: 2016-08-19 02:10:10
+* @Last Modified time: 2016-08-19 13:47:44
 */
 
 /*
@@ -13,6 +13,7 @@ body {
 	font-size: 16px;
 	color: #333;
 	font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+	margin: 0;
 	
 }
 h1 {
