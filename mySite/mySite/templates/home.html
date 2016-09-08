@@ -1,4 +1,4 @@
-{% load staticfiles %}
+{% load static %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,9 +10,10 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<link rel="icon" href="../../favicon.ico">
-
 		<title>Rafael Dutra | Computer Engineer</title>
 
+		<!-- Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 		<!-- Fonts Awesome -->
 		<script src="https://use.fontawesome.com/5109c6afa4.js"></script>
 
@@ -30,85 +31,80 @@
 		</header>
 
 		<div class="aboutMe">
-			<h1>About Me</h1>
+			<h3>About Me</h3>
 			<i class="fa fa-user fa-2x" aria-hidden="true"></i>
 			<p class="info">Recently graduated in Computer Engineering by Federal University of Pelotas, I am searching for new challenges and opportunities to grow as a person and professional, and I choose SAP to start this challenges.</p>
 			
 			<div class="education">
-				<h1>Education</h1>
+				<h3>Education</h3>
 				<i class="fa fa-book fa-2x" aria-hidden="true"></i>
 				<div class="graduation">
-					<h3>Bachelor Degree in Computer Engineer</h3>
-					<h4>Federal University of Pelotas</h4>
-					<h5>2011-2015</h5>
+					<h4>Bachelor Degree in Computer Engineer</h4>
+					<h5>Federal University of Pelotas</h5>
+					<h6>2011-2015</h6>
 				</div>
-				
 			</div>
 		</div>
 
 
 		<div class="skills">
-			<h1>Skills</h1>
+			<h3>Skills</h3>
 			<i class="fa fa-cogs fa-2x" aria-hidden="true"></i>
 			<ul>
-				<li class="python">
-					<i class="devicon-python-plain-wordmark"></i
-				</li>
-				<li class="django">
-					<i class="devicon-django-plain-wordmark"></i
-				</li>
-				<li>
-					<i class="devicon-mongodb-plain-wordmark"></i>
-				</li>
+			{% for var1, var2 in skills %}
+				{% if var2 >= 30 %}
+					<li class="{{ var1 }}">
+						<i class="devicon-{{ var1 }}-plain-wordmark"></i>
+						<div class="progress">
+							<div class="determinate" style="width: {{ var2 }}%"></div>
+						</div>
+					</li>
+				{% endif %}
+			{% endfor %}
 			</ul>
 		</div>
 
-		<div class="contact">
-			<h1>Contact</h1>
+
+		<footer class="page-footer">
+			<h3>Contact</h3>
 			<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-			<h3 id="question">Need to talk with me?</h3>
-			<address>
-				Pelotas, RS, Brazil
-				<br>
-				<br>
-				<a href="tel:xx5381587556">(xx53) 8158 7556</a>
-				<br>
-				<br>
-				<a href="mailto:dutrasr@gmail.com">dutrasr@gmail.com</a>
-			</address>
+			<div class="container-fluid">
+				<h4>Need to talk with me?</h4>
+					<address>
+					<a href="tel:{{ phone.0 }}{{ phone.1 }}">({{ phone.0 }}) {{ phone.1 }}</a>
+					<br>
+					<a href="mailto:{{ email }}">{{ email }}</a>
+					<br>
+					{{ location.0 }}, {{ location.1 }}, {{ location.2 }}
+				</address>
+				<ul>
+				{% for var1, var2, var3 in socials  %}
+					{% if var3 %}
+						<li>
+						<a class="{{ var1 }}" href="{{ var2 }}">
+							<span class="fa-stack fa-lg fa-3x">
+								<i class="fa fa-circle fa-stack-2x"></i>
+								<i class="fa fa-{{ var1 }} fa-stack-1x fa-inverse"></i>
+							</span>
+						</a>
+					</li>
+					{% endif %}
+				{% endfor %}
+				</ul>
+			</div>
 
-			<ul>
-				<li>
-					<a class="fb" href="https://www.facebook.com/rafael.dutra.94009">
-						<span class="fa-stack fa-lg fa-3x">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-						</span>
-					</a>
-					
-				</li>
-				<li>
-					<a class="in" href="https://www.linkedin.com/in/rafael-dutra-1bb140b7">
-						<span class="fa-stack fa-lg fa-3x">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-						</span>
-					</a>
-				</li>
-				<li>
-					<a class="git" ="https://github.com/dutrasr">
-						<span class="fa-stack fa-lg fa-3x">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-github-alt fa-stack-1x fa-inverse"></i>
-						</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-
-		<footer>
-			<h4>Desenvolvido por Rafael Dutra.</h4>
+			<div class="footer-copyright" id="copyright">
+				<div class="container-fluid">
+					<span>© {{ todayDate|date:"Y" }} Rafael Dutra.</span>
+				</div>
+			</div>
 		</footer>
 
+		<!-- JQuery -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+		<!-- Custom js for materialize ui functions-->
+		<script language="javaScript" type="text/javascript" src="{% static 'js/custom.js' %}"></script>
+		<!-- Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 	</body>
 </html>
