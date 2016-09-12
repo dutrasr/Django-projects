@@ -7,10 +7,10 @@ class SkillAdmin(admin.ModelAdmin):
 	list_display = ['__str__', 'porcentage', 'time_Stamp', 'updated']
 
 class InfoAdmin(admin.ModelAdmin):
-	list_display = ['__str__', 'email', 'phone']
+	list_display = ['__str__', 'email', 'phone', 'city', 'state', 'country']
 
 class SocialAdmin(admin.ModelAdmin):
-	list_display = ['__str__', 'show', 'in_Use']
+	list_display = ['__str__', 'show']
 
 
 admin.site.register(Skill, SkillAdmin)

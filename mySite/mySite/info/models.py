@@ -23,6 +23,9 @@ class Info(models.Model):
 	phone		= models.CharField(max_length=16, blank=True, null=True)
 	profession	= models.CharField(max_length=20, blank=True, null=True)
 	intro		= models.TextField(blank=True, null=True)
+	city		= models.CharField(max_length=20, blank=True, null=True)
+	state		= models.CharField(max_length=20, blank=True, null=True)
+	country		= models.CharField(max_length=20, blank=True, null=True)
 	time_Stamp 	= models.DateTimeField(auto_now_add=True, auto_now=False)
 	updated		= models.DateTimeField(auto_now_add=False, auto_now=True)
 	
@@ -30,13 +33,12 @@ class Info(models.Model):
 		return self.name
 
 class Social(models.Model):
-	"""Infos db."""
+	"""Social db."""
 
 	name		= models.CharField(max_length=20, blank=True, null=True)
 	link		= models.URLField(max_length=250, blank=True, null=True)
 	image_Link	= models.CharField(max_length=120, blank=True, null=True)
 	show		= models.BooleanField(default=False)
-	in_Use		= models.BooleanField(default=False)
 	time_Stamp 	= models.DateTimeField(auto_now_add=True, auto_now=False)
 	updated		= models.DateTimeField(auto_now_add=False, auto_now=True)
 	

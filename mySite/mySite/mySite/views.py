@@ -2,10 +2,12 @@
 # @Author: dutrasr
 # @Date:   2016-07-29 21:04:07
 # @Last Modified by:   dutrasr
-# @Last Modified time: 2016-09-08 02:44:23
+# @Last Modified time: 2016-09-12 04:16:13
 
 from django.shortcuts import render
-from datetime import date
+"""from datetime import date
+
+from .models import Info
 
 def getData(var):
 	if var == 'skills':
@@ -38,6 +40,8 @@ def home(request):
 	socials = getData('socials')
 	infos = getData('infos')
 
+
+
 	context = {
 		'todayDate': todayDate,
 		'skills': skills,
@@ -47,4 +51,4 @@ def home(request):
 		'location': ['Pelotas', 'RS', 'Brazil'],
 	}
 
-	return render(request, 'home.html', context)
+	return render(request, 'home.html', context)"""
